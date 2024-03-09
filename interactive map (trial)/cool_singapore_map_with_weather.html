@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0dada19d151eaaab673a264973eb49f4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0dada19d151eaaab673a264973eb49f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0dada19d151eaaab673a264973eb49f4 = L.map(
+                "map_0dada19d151eaaab673a264973eb49f4",
+                {
+                    center: [1.3521, 103.8198],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d1f23bbafbcdce47e1f96f759d5c0e29 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d1f23bbafbcdce47e1f96f759d5c0e29.addTo(map_0dada19d151eaaab673a264973eb49f4);
+        
+    
+            var marker_3d2745fbb3a015588600f64baf94a4be = L.marker(
+                [1.3521, 103.8198],
+                {}
+            ).addTo(map_0dada19d151eaaab673a264973eb49f4);
+        
+    
+            var icon_7f4606a61836914dba8d728459ce8e4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d2745fbb3a015588600f64baf94a4be.setIcon(icon_7f4606a61836914dba8d728459ce8e4c);
+        
+    
+        var popup_e7ca4705cd33af4ff313e88e2dc2828c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e57e3e6de6da3df5df2c22ecdef232d5 = $(`<div id="html_e57e3e6de6da3df5df2c22ecdef232d5" style="width: 100.0%; height: 100.0%;"><b>Merlion Park</b><br>Weather: broken clouds<br>Temperature: 28.68°C</div>`)[0];
+                popup_e7ca4705cd33af4ff313e88e2dc2828c.setContent(html_e57e3e6de6da3df5df2c22ecdef232d5);
+            
+        
+
+        marker_3d2745fbb3a015588600f64baf94a4be.bindPopup(popup_e7ca4705cd33af4ff313e88e2dc2828c)
+        ;
+
+        
+    
+    
+            var marker_89649ca65b573221c44c7af5f2811bfd = L.marker(
+                [1.2895, 103.85],
+                {}
+            ).addTo(map_0dada19d151eaaab673a264973eb49f4);
+        
+    
+            var icon_dd4988c72e1325675b37c29a169d2239 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89649ca65b573221c44c7af5f2811bfd.setIcon(icon_dd4988c72e1325675b37c29a169d2239);
+        
+    
+        var popup_5cce85f1d60d907b22e4b306bfda4244 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1afee2a8d54c2bf7ec0f776ac478a6b7 = $(`<div id="html_1afee2a8d54c2bf7ec0f776ac478a6b7" style="width: 100.0%; height: 100.0%;"><b>Gardens by the Bay</b><br>Weather: broken clouds<br>Temperature: 28.94°C</div>`)[0];
+                popup_5cce85f1d60d907b22e4b306bfda4244.setContent(html_1afee2a8d54c2bf7ec0f776ac478a6b7);
+            
+        
+
+        marker_89649ca65b573221c44c7af5f2811bfd.bindPopup(popup_5cce85f1d60d907b22e4b306bfda4244)
+        ;
+
+        
+    
+    
+            var polygon_fafc0c864adb8137740a5c2d4474c246 = L.polygon(
+                [[1.2839, 103.8605], [1.2821, 103.8584], [1.2832, 103.8574], [1.285, 103.8596]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0dada19d151eaaab673a264973eb49f4);
+        
+    
+            var layer_control_3298e214c1472c42e7f24f9199f878e9_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d1f23bbafbcdce47e1f96f759d5c0e29,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_3298e214c1472c42e7f24f9199f878e9 = L.control.layers(
+                layer_control_3298e214c1472c42e7f24f9199f878e9_layers.base_layers,
+                layer_control_3298e214c1472c42e7f24f9199f878e9_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_0dada19d151eaaab673a264973eb49f4);
+
+        
+</script>
+</html>
